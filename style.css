@@ -13,6 +13,11 @@ body {
   margin: 0px;
 }
 
+button {
+  cursor: pointer;
+}
+
+
 /* SIDEBAR */
 
 aside {
@@ -72,15 +77,18 @@ form {
 .item,
 .merchant {
   display: flex;
-  background-color: lightgray;
+  background-color: lightskyblue;
   margin: 10px;
   padding: 5px;
+  border-radius: 10px;
 }
 
 .item {
+  display: inline-flex;
   width: 30%;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .merchant {
@@ -103,6 +111,7 @@ form {
 .display-options {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .display-options > button {
