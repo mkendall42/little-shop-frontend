@@ -2,6 +2,7 @@
  
 * {
   font-family: sans-serif;
+  text-align: center;
 }
 
 body, html {
@@ -28,9 +29,10 @@ aside {
 header {
   text-align: center;
   margin: 10px 10px 80px 10px;
-  background-color: black;
-  color: white;
+  background-color: lightskyblue;
+  color: azure;
   padding: 15px;
+  border-radius: 30px
 }
 
 h1 {
@@ -73,6 +75,8 @@ main {
 
 form {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .item,
@@ -107,6 +111,12 @@ form {
   align-items: center;
 }
 
+.merchant:nth-child(odd) {
+  background-color: lightskyblue
+}
+.merchant:nth-child(even) {
+  background-color: rgb(245, 195, 104)
+}
 .view-items-button {
   padding: 5px;
   margin-right: 10px;
@@ -121,6 +131,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: x-large;
 }
 
 .display-options > button {
