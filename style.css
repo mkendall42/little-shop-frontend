@@ -65,9 +65,9 @@ nav > button {
 /* MAIN */
 
 main {
-  padding: 10px;
+  padding: 70px;
   width: 75%;
-  background-color: white;
+  background-color: azure;
 }
 
 form {
@@ -86,9 +86,11 @@ form {
 .item {
   display: inline-flex;
   width: 30%;
+  height: 300px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .merchant {
