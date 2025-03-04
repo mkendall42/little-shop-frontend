@@ -117,7 +117,6 @@ function submitMerchant(event) {
     showStatus('You can\'t do that. Please enter a merchant name.', false); 
     return;
   }
-  
   postData('merchants', { name: merchantName })
     .then(postedMerchant => {
       merchants.push(postedMerchant.data)
