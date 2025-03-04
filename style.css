@@ -23,6 +23,9 @@ button {
 aside {
   width: 25%;
   margin: none;
+  background-image: url('images/businessman1-sq.png');
+  background-size: contain;
+background-position: center
 }
 
 header {
@@ -135,5 +138,3 @@ form {
 .hidden {
   display: none;
 } 
-  
-co
