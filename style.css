@@ -40,6 +40,7 @@ h1 {
 h1, 
 h2 {
   margin: 0;
+  text-align: center;
 }
 
 nav {
@@ -59,7 +60,7 @@ nav > button {
 }
 
 .active-nav {
-  background-color: white;
+  background-color: azure;
 }
 
 /* MAIN */
@@ -93,6 +94,12 @@ form {
   align-content: center;
 }
 
+.item:nth-child(odd) {
+  background-color: lightskyblue
+}
+.item:nth-child(even) {
+  background-color: rgb(245, 195, 104)
+}
 .merchant {
   width: 98%;
   flex-direction: row;
