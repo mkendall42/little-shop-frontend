@@ -2,6 +2,7 @@
  
 * {
   font-family: sans-serif;
+  text-align: center;
 }
 
 body, html {
@@ -31,9 +32,10 @@ background-position: center
 header {
   text-align: center;
   margin: 10px 10px 80px 10px;
-  background-color: black;
-  color: white;
+  background-color: lightskyblue;
+  color: azure;
   padding: 15px;
+  border-radius: 30px
 }
 
 h1 {
@@ -43,6 +45,7 @@ h1 {
 h1, 
 h2 {
   margin: 0;
+  text-align: center;
 }
 
 nav {
@@ -62,19 +65,21 @@ nav > button {
 }
 
 .active-nav {
-  background-color: white;
+  background-color: azure;
 }
 
 /* MAIN */
 
 main {
-  padding: 10px;
+  padding: 70px;
   width: 75%;
-  background-color: white;
+  background-color: azure;
 }
 
 form {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .item,
@@ -89,11 +94,19 @@ form {
 .item {
   display: inline-flex;
   width: 30%;
+  height: 300px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-content: center;
 }
 
+.item:nth-child(odd) {
+  background-color: lightskyblue
+}
+.item:nth-child(even) {
+  background-color: rgb(245, 195, 104)
+}
 .merchant {
   width: 98%;
   flex-direction: row;
@@ -101,6 +114,12 @@ form {
   align-items: center;
 }
 
+.merchant:nth-child(odd) {
+  background-color: lightskyblue
+}
+.merchant:nth-child(even) {
+  background-color: rgb(245, 195, 104)
+}
 .view-items-button {
   padding: 5px;
   margin-right: 10px;
@@ -115,6 +134,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: x-large;
 }
 
 .display-options > button {
